@@ -5,21 +5,19 @@
   <title>My Web Page</title>
 </head>
 <body style="background-color:lavender;">
-  <h1 style="background-color:lightskyblue;">My First Website</h1>
-   <h2 style="border-style:solid; border-width:1px;">I hope you like it here.</h2>
-    <h3>I hope you like it here.</h3>
-     <h4>I hope you like it here.</h4>
-     <h5>I hope you like it here.</h5>
-      <h6>I hope you like it here.</h6>
-       <p style="color:red;">This is my paragraph.</p><br>
-       <p>This is another paragraph.</p>
-        <b>Bold text</b>
-        <i>Italic text</i>
-        <em>Emphasized text</em>
-        <sub>Subscript text</sub>
-        <sup>Superscript text</sup>
-        <img src="http://www.cuc.edu.cn/_upload/site/00/05/5/logo.png">
-        <a href="http://www.cuc.edu.cn/" target="_blank">This is the link to CUC's website</a>
-        <img src="图1.jpg">
+<body id = 'demo'>
+    <h1>Hi!</h1>
+    <h2>This is an easy calculator by which you can do a simple addition.</h2>
+    <button onclick="calculate()">Click here to do an addition</button>
+    <script>
+    function calculate(){
+    var num1 = prompt('Please enter the first number:');
+    var num2 = prompt('Please enter the second number:');
+    var num3 = parseFloat(num1) + parseFloat(num2);
+    alert('The result is:' + num3);
+    }
+    var p = document.getElementById('demo')
+    p.style.color = "purple"
+    </script>
 </body>
 </html>
