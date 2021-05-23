@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Web Page</title>
+</head>
+<body style="background-color:lavender;">
+<body id = 'demo'>
+    <h1>Hi!</h1>
+    <h2>This is an easy calculator by which you can do a simple addition.</h2>
+    <button onclick="calculate()">Click here to do an addition</button>
+    <script>
+    function calculate(){
+    var num1 = prompt('Please enter the first number:');
+    var num2 = prompt('Please enter the second number:');
+    var num3 = parseFloat(num1) + parseFloat(num2);
+    alert('The result is:' + num3);
+    }
+    var p = document.getElementById('demo')
+    p.style.color = "purple"
+    </script>
+</body>
+</html>

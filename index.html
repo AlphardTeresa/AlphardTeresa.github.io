@@ -1,23 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>My Web Page</title>
-</head>
-<body style="background-color:lavender;">
-<body id = 'demo'>
-    <h1>Hi!</h1>
-    <h2>This is an easy calculator by which you can do a simple addition.</h2>
-    <button onclick="calculate()">Click here to do an addition</button>
-    <script>
-    function calculate(){
-    var num1 = prompt('Please enter the first number:');
-    var num2 = prompt('Please enter the second number:');
-    var num3 = parseFloat(num1) + parseFloat(num2);
-    alert('The result is:' + num3);
-    }
-    var p = document.getElementById('demo')
-    p.style.color = "purple"
-    </script>
+<html lang="zh">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>星云图鉴</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link href="style.css" rel="stylesheet">
+ </head>
+<body style="background-color:#6a6da9;">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  	<div class="container-fluid">
+      		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+  			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarResponsive">
+  				<ul class="navbar-nav ml-auto">
+  					<li class="nav-item active">
+  						<a class="nav-link" href="#">主页</a>
+  					</li>
+  					<li class="nav-item">
+  						<a class="nav-link" href="#">简介</a>
+  					</li>
+  					<li class="nav-item">
+  						<a class="nav-link" href="#">更多</a>
+  			    </li>
+  				  </ul>
+  		   </div>
+  	   </div>
+    </nav>
+    <div id="slides" class="carousel slide" data-ride="carousel">
+  	<ul class="carousel-indicators">
+  		<li data-target="#slides" data-slide-to="0" class="active"></li>
+  		<li data-target="#slides" data-slide-to="1"></li>
+  		<li data-target="#slides" data-slide-to="2"></li>	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/gif4.gif">
+			 <div class="carousel-caption">
+				 <h1 class="display-2">星云图鉴</h1>
+				 <h3><i>"你就像黑夜，拥有寂静与群星"</i></h3>
+				 <button type="button" class="btn btn-outline-light btn-lg">星云是什么？</button>
+				 <button type="button" class="btn btn-outline-light btn-lg">打开星云图鉴</button>
+			 </div>
+		</div>
+<div class="carousel-item">
+	<img src="img/gif.gif">
+	</div>
+		<div class="carousel-item">
+			<img src="img/gif5.gif">
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6">
+      <h2>
+        <div style="padding-bottom:40px;padding-top:60px;">
+        <font size="9", color="#fffffb">星云是什么？</font>
+      </h2>
+			<p>
+      <font size="4", color="#fffffb">&emsp;&emsp;星云是尘埃、氢气、氦气和其他电离气体聚集的星际云。原本是天文学上通用的名词，泛指任何天文上的扩散天体，星云是尘埃和气体空间中的巨云，组成成分是气体和尘埃，他们多来自垂死的恒星(如超新星)的爆炸。也有一些星云是新星开始形成的区域。出于这个原因，一些星云也被称为是“星级托儿所”。星云存在于恒星之间的空间——也称为星际空间。离地球最近的已知的超新星形成星云称为螺旋星云。它是一颗垂死的恒星的残余——可能像太阳一样。离地球大约700光年。这意味着即使你能以光速进行星级旅行，你也仍需要700年的时间才能够到达。</font></p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/bg2.jpg"  class="img-fluid">
+		</div>
+	</div>
+</div>
+<hr class="my-4">
+<h1>
+  <div style="padding-bottom:40px;padding-top:40px;">
+  <font size="9", color="#fffffb">星云图鉴</font>
+  </div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6">
+			<img src="img/p1.jpeg"  class="img-fluid">
+			<br>
+		  <div style="text-align:center;">
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+它是什么？
+  </a>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+            <h5 class="card-title">M7天鹅星云</h5>
+            <h6 class="card-text">天鹅星云距离地球约5,000至6,000光年之间，直径约15光年。它被认为是我们银河系中最亮、最大规模的恒星形成区域之一。它所在位置的几何体与猎户座大星云相似，只不过它是以边缘，而不是正面对着。</h6>
+        </div>
+      </div>
+		</div>
+  </div>
+<div class="col-lg-6">
+	<img src="img/p2.jpg"  class="img-fluid">
+  <br>
+  <div style="text-align:center;">
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+它是什么？
+  </button>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          <h5 class="card-title">IC2118 女巫星云</h5>
+          <h6 class="card-text">这个星云与地球相距约1000光年。在亮星参宿七的照射下，女巫头星云(Witch Head Nebula)好像一缕烟雾贯穿波江星座。波江星座距离地球约700光年，是个蜿蜒的、在南北方向延伸的星座，位于猎户座的西南方向，拉丁语名称为Eridanus,，意为河流，是意大利的波河在神话中的名字。星云会发光，是因为星云内微细的尘埃，反射参宿七的星光所形成的。如果今晚你看到这一可怕的女巫，不必惊慌，祝你度过一个欢快而又安全的万圣节。
+          </h6>
+        </div>
+      </div>
+		</div>
+	</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="container-fluid">
+<div class="col-12">
+    <blockquote class="blockquote text-right">
+      <font size="5", color="#fffffb">我们终会在浩瀚宇宙中重逢。</font>
+    </blockquote>
+      <div style="text-align:center;">
+      <font color="#ADADAD">致每一个热爱宇宙的人</cite></font>
+      </div>
+  <div style="text-align:center;">
+				<hr class="light">
+				<h5>&copy; AlphardTeresa.github.io/</h5>
+	</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
